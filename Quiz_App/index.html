@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Quiz App</title>
+</head>
+
+<body>
+
+    <div class="intro py-3 bg-white text-center">
+        <div class="container">
+            <h2 class="text-primary display-3 my-4">Indian Quiz App</h2>
+        </div>
+    </div>
+
+
+    <!-- result section-->
+    <div class="result py-4 d-none bg-light text-center">
+        <div class="container lead">
+            <p>You are <span class="text-primary display-4 p-3">0%</span> Desi</p>
+        </div>
+    </div>
+
+    <!-- quiz-section-->
+    <div class="quiz py-4 bg-primary">
+        <div class="container">
+            <h2 class="my-5 text-white">Questions are here...</h2>
+
+            <form class="quiz-form text-light">
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 1. "Saans lene se bhi jada tum jaruri ho gye" is statement me
+                        kavi kya
+                        khna chahta hai?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="A" checked>
+                        <label class="form-check-label">Kavi ko Oxygen se koi matlab nhi hai</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q1" value="B">
+                        <label for="" class="form-check-label">Kavi bhojan k baare me baat kr rha hai</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 2. Pta nhi ji konsa nasha krta hai!!</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="A" checked>
+                        <label class="form-check-label">Mai nahi btaunga</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q2" value="B">
+                        <label for="" class="form-check-label">Ka karoge jaan k? Chhuda doge kya</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal"> 3. "Dekhu mai tujhe ya dekhu kudrat k nazare" se kavi ka kya
+                        arth hai</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="A" checked>
+                        <label class="form-check-label">Kavi nashe me hai</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q3" value="B">
+                        <label for="" class="form-check-label">Kavi bohot jada nashe me hai</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">4. "Agar tum mil jao, Zamana chod denge hum"</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="A" checked>
+                        <label class="form-check-label">Kavi apne dahi jamane ka vyapar bnd kr dega</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q4" value="B">
+                        <label for="" class="form-check-label">Kavi uspe haq jamana chhod dega</label>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <p class="lead font-weight-normal">5. Kya sch me sonam gupta Bewafa hai?</p>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="A" checked>
+                        <label class="form-check-label">Hume nhi pta iske baare me</label>
+                    </div>
+                    <div class="form-check my-2 text-white-50">
+                        <input type="radio" name="q5" value="B">
+                        <label for="" class="form-check-label">Abe, tumse Matlab!</label>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-light">
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
