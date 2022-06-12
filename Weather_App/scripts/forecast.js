@@ -1,33 +1,26 @@
-// const key = '7uX1XAMGXl1ujfqm2ntSlvC5vLzfAeKl';
-// //get weather info
-// const getWeather = async (id) => {
+const key = '7uX1XAMGXl1ujfqm2ntSlvC5vLzfAeKl';
 
-//     const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
-//     const query = `${id}?apikey=${key}`;
+//get weather info
+const getWeather = async (id) => {
 
-//     const response = await fetch(base + query);
-//     const data = await response.json();
+    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const query = `${id}?apikey=${key}`;
 
-//     return data[0];
+    const response = await fetch(base + query);
+    const data = await response.json();
 
-// };
+    return data[0];
 
-// //get city info
-// const getCity = async (city) => {
+};
 
-//     const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
-//     const query = `?apikey=${key}&q=${city}`;
+//get city info
+const getCity = async (city) => {
 
-//     const response = await fetch(base + query);
-//     const data = await response.json();
+    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const query = `?apikey=${key}&q=${city}`;
 
-//     return data[0];
-// };
+    const response = await fetch(base + query);
+    const data = await response.json();
 
-// // getCity('manchester').then(data => {
-// //         return getWeather(data.Key);
-// //     }).then(data=>{
-// //         console.log(data);
-// //     }).catch(err => console.log(err))
-
-// // getWeather("329260");
+    return data[0];
+};
