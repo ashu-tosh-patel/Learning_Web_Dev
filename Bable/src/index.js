@@ -4,9 +4,4 @@ const greet = (name)=>{
 greet('ashu');
 greet('abhi');
 greet('anur');
-
-class User{
-    constructor(){
-        this.score = 10000;
-    }
-}
+greet('shiv');
